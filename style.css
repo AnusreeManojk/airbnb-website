@@ -1,0 +1,120 @@
+*{
+    padding:0;
+    margin:0;
+}
+.top{
+    transition-timing-function:  var(--linaria-theme_motion-linear-curve-animation-timing-function);
+    transition-duration:1160ms;
+    transition-property:background-color;
+}
+.wrapper{
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    background:#e7e7df ;
+    height:64px;
+    /* position: relative; */
+}
+.wrapper button{
+    outline: none;
+    cursor: pointer;
+    background: #e7e7df;
+    color:#000;
+    padding:0;
+    margin:0;
+    text-decoration: underline;
+    font-size:0.937rem;
+    border: none;
+    font-weight: 300;
+   
+}
+.nav-bar{
+    /* display: flex; */
+    padding:20px 80px;
+    /* background: #ffffff; */
+    /* margin:0; */
+    justify-content: space-around;
+    box-sizing: border-box;
+}
+.nav-bar .top-nav{
+    justify-content: space-between;
+    margin-top:0;
+    display: flex;
+}
+.top-nav .logo img{
+   width:100px;
+}
+.top-nav .mid-contents{
+    justify-content: space-around;
+    display: flex;
+    margin:0 40px;
+    color:black;
+    padding: 0 20px;
+    align-items: center;
+
+}
+
+.top-nav .mid-contents ul{
+    /* color:#000; */
+    /* border:none; */
+    display:flex;
+    cursor:pointer;
+    font-size: .875rem;
+    padding: 0;
+    margin: 0;
+    gap:24px ;
+   
+}
+.nav .mid-contents ul li{
+    position: relative;
+   display: inline-flex;
+   /* flex-direction: column; */
+   /* font-size: 1rem; */
+   /* font-weight: 100; */
+   font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif;
+   /* font-family: sans-serif; */
+   list-style: none;
+   justify-content: center;
+   align-items: center;
+   width: 150px ;
+   padding: 20px 0;
+   border-radius: 48px;
+   cursor: pointer;
+   margin: 10px 16px;
+   line-height:14.21px;
+   font-weight: var(--linaria-theme_typography-weight-book400);
+}
+
+/* .nav .mid-contents ul li :hover{
+    background: #535252
+}
+.top-nav .mid-contents .none{
+    width:85px;
+}
+.top-nav .mid-contents{
+    background-color: #dbdbdb;
+    border-radius: 20px;
+    padding: 20px 0;
+    width:85px;
+}
+.top-nav .mid-nav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+}
+.side-nav{
+    display: flex;
+    width: 100%;
+    height: 40%;
+    justify-content: center;
+    align-items: center;
+    background: #ffffff;
+    border: 1px solid ;
+    border-radius: #3b393900;
+    gap:8px;
+
+    
+}
+ */
