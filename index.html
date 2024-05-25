@@ -1,14 +1,15 @@
-<!-- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Airbnb |  Hollydays rental,cabins,beach houses & more</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="images/airbnb logo.png">
-    <title>Airbnb | Holiday rentals,beach house & more</title>
+    <link rel="icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMCIgaGVpZ2h0PSIzMiIgc3R5bGU9ImRpc3BsYXk6YmxvY2siPjxwYXRoIGQ9Ik0yOS4zODY0IDIyLjcxMDFDMjkuMjQyOSAyMi4zMDczIDI5LjA3NTIgMjEuOTE3NiAyOC45MTU3IDIxLjU1NjVDMjguNjcwMSAyMS4wMDExIDI4LjQxMjkgMjAuNDQ0NiAyOC4xNjQxIDE5LjkwNjdMMjguMTQ0NCAxOS44NjRDMjUuOTI1NSAxNS4wNTg5IDIzLjU0MzkgMTAuMTg4MSAyMS4wNjU5IDUuMzg3MDFMMjAuOTYwNyA1LjE4MzE2QzIwLjcwNzkgNC42OTI4OSAyMC40NDY2IDQuMTg1OTYgMjAuMTc4NCAzLjY4Nzg2QzE5Ljg2MDQgMy4wNTc1IDE5LjQ3NDUgMi40NjM2IDE5LjAyNzYgMS45MTY2OEMxOC41MjQ1IDEuMzE2NTEgMTcuODk1NiAwLjgzMzgyMiAxNy4xODUzIDAuNTAyNjU0QzE2LjQ3NSAwLjE3MTQ4NiAxNS43MDA1IC05LjgzOTU5ZS0wNSAxNC45MTY1IDQuMjMzMTdlLTA4QzE0LjEzMjUgOS44NDgwNWUtMDUgMTMuMzU4MSAwLjE3MTg3NyAxMi42NDc4IDAuNTAzMjI0QzExLjkzNzYgMC44MzQ1NzEgMTEuMzA4OCAxLjMxNzQyIDEwLjgwNTkgMS45MTc3MUMxMC4zNTk1IDIuNDY0NzYgOS45NzM4MyAzLjA1ODUzIDkuNjU1NzIgMy42ODg1OEM5LjM4NTIxIDQuMTkxMTUgOS4xMjE0NSA0LjcwMjc4IDguODY2NCA1LjE5NzU3TDguNzY4NzIgNS4zODY5NkM2LjI5MDYxIDEwLjE4ODQgMy45MDkwMyAxNS4wNTkyIDEuNjkwMTUgMTkuODYzOUwxLjY1NzgyIDE5LjkzMzhDMS40MTMzNCAyMC40NjMgMS4xNjA1NyAyMS4wMTAyIDAuOTE5MDczIDIxLjU1NjNDMC43NTk0OSAyMS45MTcxIDAuNTkyMDA5IDIyLjMwNjUgMC40NDgzNTUgMjIuNzEwM0MwLjAzNjkwNjMgMjMuODEwNCAtMC4wOTQyMDQgMjQuOTk1MyAwLjA2NjgwOTggMjYuMTU4NUMwLjIzNzU2MiAyNy4zMzQgMC43MTMwMDggMjguNDQ0NyAxLjQ0NjA2IDI5LjM4MDRDMi4xNzkxMSAzMC4zMTYxIDMuMTQ0MzQgMzEuMDQ0NCA0LjI0NjE0IDMxLjQ5MzJDNS4wNzgzNSAzMS44Mjk5IDUuOTY4MTggMzIuMDAyIDYuODY2MTYgMzJDNy4xNDgyNCAzMS45OTk5IDcuNDMwMDggMzEuOTgzNSA3LjcxMDI3IDMxLjk1MDlDOC44NDYgMzEuODA2MiA5Ljk0MTM2IDMxLjQzNjYgMTAuOTMyMSAzMC44NjM5QzEyLjIzMTcgMzAuMTMzOCAxMy41MTUyIDI5LjA2MzggMTQuOTE3MyAyNy41MzQ4QzE2LjMxOTQgMjkuMDYzOCAxNy42MDI5IDMwLjEzMzggMTguOTAyNSAzMC44NjM5QzE5Ljg5MzIgMzEuNDM2NyAyMC45ODg2IDMxLjgwNjIgMjIuMTI0MyAzMS45NTA5QzIyLjQwNDUgMzEuOTgzNSAyMi42ODY0IDMxLjk5OTkgMjIuOTY4NSAzMkMyMy44NjY0IDMyLjAwMiAyNC43NTYxIDMxLjgyOTkgMjUuNTg4MyAzMS40OTMyQzI2LjY5MDEgMzEuMDQ0NCAyNy42NTU0IDMwLjMxNjEgMjguMzg4NSAyOS4zODA0QzI5LjEyMTYgMjguNDQ0NyAyOS41OTcxIDI3LjMzNDEgMjkuNzY3OSAyNi4xNTg1QzI5LjkyODcgMjQuOTk1MiAyOS43OTc2IDIzLjgxMDMgMjkuMzg2NCAyMi43MTAxWk0xNC45MTczIDI0LjM3N0MxMy4xODE2IDIyLjE3NjkgMTIuMDY3OCAyMC4xMzM4IDExLjY3NyAxOC40MjFDMTEuNTE2OSAxNy43NzkyIDExLjQ3OTEgMTcuMTEzMSAxMS41NjU2IDE2LjQ1NzNDMTEuNjMzOSAxNS45NzY2IDExLjgxMDUgMTUuNTE3NiAxMi4wODIxIDE1LjExNDhDMTIuNDE2MyAxNC42ODE0IDEyLjg0NTggMTQuMzMwNCAxMy4zMzc0IDE0LjA4ODlDMTMuODI5IDEzLjg0NzUgMTQuMzY5NiAxMy43MjE5IDE0LjkxNzUgMTMuNzIxOUMxNS40NjU1IDEzLjcyMiAxNi4wMDYgMTMuODQ3NiAxNi40OTc2IDE0LjA4OTJDMTYuOTg5MiAxNC4zMzA3IDE3LjQxODYgMTQuNjgxNyAxNy43NTI4IDE1LjExNTFDMTguMDI0NCAxNS41MTgxIDE4LjIwMSAxNS45NzcxIDE4LjI2OTMgMTYuNDU3OUMxOC4zNTU2IDE3LjExNCAxOC4zMTc3IDE3Ljc4MDMgMTguMTU3MyAxOC40MjIzQzE3Ljc2NjEgMjAuMTM0OSAxNi42NTI2IDIyLjE3NzQgMTQuOTE3MyAyNC4zNzdaTTI3Ljc0MDYgMjUuODY4OUMyNy42MjEyIDI2LjY5MDggMjcuMjg4NyAyNy40Njc0IDI2Ljc3NjIgMjguMTIxNkMyNi4yNjM2IDI4Ljc3NTkgMjUuNTg4NyAyOS4yODUyIDI0LjgxODMgMjkuNTk5QzI0LjAzOTMgMjkuOTExMSAyMy4xOTM5IDMwLjAyMTcgMjIuMzYwNyAyOS45MjA1QzIxLjQ5NDYgMjkuODA4OSAyMC42NTk5IDI5LjUyMzkgMTkuOTA2OSAyOS4wODI0QzE4Ljc1MDEgMjguNDMyNSAxNy41NzkxIDI3LjQzNDggMTYuMjYxNCAyNS45NzEyQzE4LjM1OTEgMjMuMzg0NiAxOS42NjkgMjEuMDAwNSAyMC4xNTQgMTguODc3QzIwLjM3MjMgMTcuOTg0IDIwLjQxOTYgMTcuMDU3OSAyMC4yOTM1IDE2LjE0NzVDMjAuMTc5MSAxNS4zNjMyIDE5Ljg4NzkgMTQuNjE1IDE5LjQ0MTkgMTMuOTU5M0MxOC45MTk0IDEzLjI1MTkgMTguMjM3OCAxMi42NzY4IDE3LjQ1MiAxMi4yODA1QzE2LjY2NjEgMTEuODg0MiAxNS43OTggMTEuNjc3NyAxNC45MTc1IDExLjY3NzdDMTQuMDM3MSAxMS42Nzc3IDEzLjE2ODkgMTEuODg0MSAxMi4zODMgMTIuMjgwM0MxMS41OTcxIDEyLjY3NjUgMTAuOTE1NSAxMy4yNTE1IDEwLjM5MyAxMy45NTg5QzkuOTQ3MDcgMTQuNjE0NCA5LjY1NTkxIDE1LjM2MjQgOS41NDE0IDE2LjE0NjVDOS40MTUyNCAxNy4wNTY2IDkuNDYyMyAxNy45ODIyIDkuNjgwMTEgMTguODc0OUMxMC4xNjQ4IDIwLjk5OTMgMTEuNDc0OCAyMy4zODQgMTMuNTczMiAyNS45NzE0QzEyLjI1NTUgMjcuNDM0OCAxMS4wODQ1IDI4LjQzMjUgOS45Mjc2OSAyOS4wODI1QzkuMTc0NjggMjkuNTIzOSA4LjM0MDA3IDI5LjgwOSA3LjQ3Mzk1IDI5LjkyMDVDNi42NDA2NSAzMC4wMjE3IDUuNzk1MjUgMjkuOTExMSA1LjAxNjIgMjkuNTk5QzQuMjQ1ODEgMjkuMjg1MiAzLjU3MDkyIDI4Ljc3NTkgMy4wNTgzOCAyOC4xMjE3QzIuNTQ1ODUgMjcuNDY3NCAyLjIxMzQ1IDI2LjY5MDggMi4wOTQxMSAyNS44Njg5QzEuOTc5MzIgMjUuMDMzNCAyLjA3NzAxIDI0LjE4MjUgMi4zNzgxOCAyMy4zOTQ2QzIuNDkyNjYgMjMuMDcyOCAyLjYyNjYzIDIyLjc1NyAyLjc5MjYgMjIuMzgxOEMzLjAyNzQgMjEuODUxIDMuMjc2NTcgMjEuMzExNSAzLjUxNzU5IDIwLjc4OThMMy41NDk5NiAyMC43MTk3QzUuNzU2NDMgMTUuOTQxOSA4LjEyNDgxIDExLjA5ODIgMTAuNTg5NCA2LjMyMjk0TDEwLjY4NzUgNi4xMzI4M0MxMC45Mzg0IDUuNjQ2MDEgMTEuMTk3OSA1LjE0MjY3IDExLjQ1OTcgNC42NTYzQzExLjcxMDEgNC4xNTUwMSAxMi4wMTMyIDMuNjgxNzEgMTIuMzYzOSAzLjI0NDRDMTIuNjc0NiAyLjg2OTAzIDEzLjA2NDYgMi41NjY4MSAxMy41MDU5IDIuMzU5MzRDMTMuOTQ3MyAyLjE1MTg2IDE0LjQyOTEgMi4wNDQyNiAxNC45MTY5IDIuMDQ0MjJDMTUuNDA0NyAyLjA0NDE4IDE1Ljg4NjYgMi4xNTE3MSAxNi4zMjc5IDIuMzU5MTFDMTYuNzY5MyAyLjU2NjUxIDE3LjE1OTMgMi44Njg2NyAxNy40NzAxIDMuMjQzOTlDMTcuODIxIDMuNjgwOTcgMTguMTI0MiA0LjE1NDExIDE4LjM3NDQgNC42NTUzOEMxOC42MzM4IDUuMTM3NDIgMTguODkxIDUuNjM2MjMgMTkuMTM5OCA2LjExODU4TDE5LjI0NTIgNi4zMjMxNUMyMS43MDk3IDExLjA5NzkgMjQuMDc4IDE1Ljk0MTUgMjYuMjg0NyAyMC43MjAxTDI2LjMwNDYgMjAuNzYzMUMyNi41NDk4IDIxLjI5MzYgMjYuODAzMyAyMS44NDE5IDI3LjA0MiAyMi4zODJDMjcuMjA4MiAyMi43NTc3IDI3LjM0MjQgMjMuMDczOCAyNy40NTY2IDIzLjM5NDRDMjcuNzU3NiAyNC4xODI0IDI3Ljg1NTMgMjUuMDMzMyAyNy43NDA2IDI1Ljg2ODlaIiBmaWxsPSJjdXJyZW50Y29sb3IiLz48L3N2Zz4=">
 </head>
 <body>
-    <div class="top">
+    <div class="first">
         <div class="wrapper">
             <button>
                 Learn more about Icons
@@ -17,71 +18,331 @@
     </div>
 
     <section class="nav-bar">
-        <div class="top-nav">
-            <div class="logo">
-                <img src="images/airbnb.png">
-            </div>
-        </div>
-
-            <div class="mid-nav">
-                <div class="mid-contents">
-                    <ul>
-                        <li class="none">Stays</li>
-                        <li class="none">Experiences</li>
-                        <li class="none">Online Experiences</li>
-                    </ul>
+        <div class="nav">
+              
+                <div class="first-logo">
+                    <img src="images/airbnb.png" >
                 </div>
-            </div>
-            <div class="side-nav">
-                <div class="airbnb">
-                    <p>Airbnb your home</p>
-                      <!-- <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNiAxNiIgYXJpYS1oaWRkZW49InRydWUiIHJvbGU9InByZXNlbnRhdGlvbiIgZm9jdXNhYmxlPSJmYWxzZSIgc3R5bGU9ImRpc3BsYXk6IGJsb2NrOyBoZWlnaHQ6IDE2cHg7IHdpZHRoOiAxNnB4OyBmaWxsOiBjdXJyZW50Y29sb3I7Ij48cGF0aCBkPSJNOCAuMjVhNy43NyA3Ljc3IDAgMCAxIDcuNzUgNy43OCA3Ljc1IDcuNzUgMCAwIDEtNy41MiA3LjcyaC0uMjVBNy43NSA3Ljc1IDAgMCAxIC4yNSA4LjI0di0uMjVBNy43NSA3Ljc1IDAgMCAxIDggLjI1em0xLjk1IDguNWgtMy45Yy4xNSAyLjkgMS4xNyA1LjM0IDEuODggNS41SDhjLjY4IDAgMS43Mi0yLjM3IDEuOTMtNS4yM3ptNC4yNiAwaC0yLjc2Yy0uMDkgMS45Ni0uNTMgMy43OC0xLjE4IDUuMDhBNi4yNiA2LjI2IDAgMCAwIDE0LjE3IDl6bS05LjY3IDBIMS44YTYuMjYgNi4yNiAwIDAgMCAzLjk0IDUuMDggMTIuNTkgMTIuNTkgMCAwIDEtMS4xNi00LjdsLS4wMy0uMzh6bTEuMi02LjU4LS4xMi4wNWE2LjI2IDYuMjYgMCAwIDAtMy44MyA1LjAzaDIuNzVjLjA5LTEuODMuNDgtMy41NCAxLjA2LTQuODF6bTIuMjUtLjQyYy0uNyAwLTEuNzggMi41MS0xLjk0IDUuNWgzLjljLS4xNS0yLjktMS4xOC01LjM0LTEuODktNS41aC0uMDd6bTIuMjguNDMuMDMuMDVhMTIuOTUgMTIuOTUgMCAwIDEgMS4xNSA1LjAyaDIuNzVhNi4yOCA2LjI4IDAgMCAwLTMuOTMtNS4wN3oiLz48L3N2Zz4=" alt=""> -->
-                       <div class="user-btn">
-                        <!-- <button>
-                              <img class="image1" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMiAzMiIgYXJpYS1oaWRkZW49InRydWUiIHJvbGU9InByZXNlbnRhdGlvbiIgZm9jdXNhYmxlPSJmYWxzZSIgc3R5bGU9ImRpc3BsYXk6IGJsb2NrOyBmaWxsOiBub25lOyBoZWlnaHQ6IDE2cHg7IHdpZHRoOiAxNnB4OyBzdHJva2U6IGN1cnJlbnRjb2xvcjsgc3Ryb2tlLXdpZHRoOiAzOyBvdmVyZmxvdzogdmlzaWJsZTsiPjxnIGZpbGw9Im5vbmUiPjxwYXRoIGQ9Ik0yIDE2aDI4TTIgMjRoMjhNMiA4aDI4Ii8+PC9nPjwvc3ZnPg==">
-                              <img class="image2"  src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMiAzMiIgYXJpYS1oaWRkZW49InRydWUiIHJvbGU9InByZXNlbnRhdGlvbiIgZm9jdXNhYmxlPSJmYWxzZSIgc3R5bGU9ImRpc3BsYXk6IGJsb2NrOyBmaWxsOiBub25lOyBoZWlnaHQ6IDE2cHg7IHdpZHRoOiAxNnB4OyBzdHJva2U6IGN1cnJlbnRjb2xvcjsgc3Ryb2tlLXdpZHRoOiAzOyBvdmVyZmxvdzogdmlzaWJsZTsiPjxnIGZpbGw9Im5vbmUiPjxwYXRoIGQ9Ik0yIDE2aDI4TTIgMjRoMjhNMiA4aDI4Ii8+PC9nPjwvc3ZnPg==">
-                         </button> -->
-                       </div>
-                </div>
-         </div>
-        </div>
-    </section>
-    <!-- <div class="botton-f1">
-        <div class="feature1">
-            <ul>
-                <li class="hd">Where</li>
-                <li>Search destination</li>
-            </ul>
-        </div>
-        <div class="bottom-f2">
-             <div class="feature2">
-                <ul>
-                    <li class="hd">Check in</li>
-                    <li>Add dates</li>
-                </ul>
-             </div>
-             <div class="bottum-f3">
-                <div class="feature3">
-                    <ul>
-                      <li class="hd">Check out</li>
-                       <li>Add dates</li>
-                    </ul>
-                </div>
-                <div class="bottom-f4">
-                    <div class="feature4">
+                <div class="mid-positon">
+                    <div class="contents">
                         <ul>
-                            <li class="hd">Who</li>
-                            <li>Add guests</li>
+                            <li class="first">Stays</li>
+                            <li class="sec">Experiences</li>
+                            <li class="thrd">Online Experiences</li>
                         </ul>
+                      </div>
+                    <div class="below-cont">
+                        <div class="fi-con">
+                            <ul>
+                                <li class="head">Where </li>
+                                <li>Search destination</li>
+                            </ul>
+                        </div>
+                        <div class="se-con">
+                            <ul class="in-sec">
+                                <li class="head">Check in</li>
+                                <li>Add dates</li>
+                            </ul>
+                        </div>
+                        <div class="thi-con">
+                            <ul>
+                                <li class="head">Check out</li>
+                                <li>Add dates</li>
+                            </ul>
+                        </div>
+                        <div class="fourt-content">
+                            <ul>
+                                <li class="head">Who</li>
+                                <li>Add guest</li>
+                            </ul>
+                        </div>
+                        <div class="search">
+                            <span><i class="fa-solid fa-magnifying-glass"></i></span>
+                        </div>
+                    </div>
+                 </div>
+                    <div class="airbnb-hom">
+                        <p>Airbnb your home</p>
+                        <div class="glob">
+                            <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNiAxNiIgYXJpYS1oaWRkZW49InRydWUiIHJvbGU9InByZXNlbnRhdGlvbiIgZm9jdXNhYmxlPSJmYWxzZSIgc3R5bGU9ImRpc3BsYXk6IGJsb2NrOyBoZWlnaHQ6IDE2cHg7IHdpZHRoOiAxNnB4OyBmaWxsOiBjdXJyZW50Y29sb3I7Ij48cGF0aCBkPSJNOCAuMjVhNy43NyA3Ljc3IDAgMCAxIDcuNzUgNy43OCA3Ljc1IDcuNzUgMCAwIDEtNy41MiA3LjcyaC0uMjVBNy43NSA3Ljc1IDAgMCAxIC4yNSA4LjI0di0uMjVBNy43NSA3Ljc1IDAgMCAxIDggLjI1em0xLjk1IDguNWgtMy45Yy4xNSAyLjkgMS4xNyA1LjM0IDEuODggNS41SDhjLjY4IDAgMS43Mi0yLjM3IDEuOTMtNS4yM3ptNC4yNiAwaC0yLjc2Yy0uMDkgMS45Ni0uNTMgMy43OC0xLjE4IDUuMDhBNi4yNiA2LjI2IDAgMCAwIDE0LjE3IDl6bS05LjY3IDBIMS44YTYuMjYgNi4yNiAwIDAgMCAzLjk0IDUuMDggMTIuNTkgMTIuNTkgMCAwIDEtMS4xNi00LjdsLS4wMy0uMzh6bTEuMi02LjU4LS4xMi4wNWE2LjI2IDYuMjYgMCAwIDAtMy44MyA1LjAzaDIuNzVjLjA5LTEuODMuNDgtMy41NCAxLjA2LTQuODF6bTIuMjUtLjQyYy0uNyAwLTEuNzggMi41MS0xLjk0IDUuNWgzLjljLS4xNS0yLjktMS4xOC01LjM0LTEuODktNS41aC0uMDd6bTIuMjguNDMuMDMuMDVhMTIuOTUgMTIuOTUgMCAwIDEgMS4xNSA1LjAyaDIuNzVhNi4yOCA2LjI4IDAgMCAwLTMuOTMtNS4wN3oiLz48L3N2Zz4=" alt="">
+                        </div>
+                         <div class="user">
+                            <button>
+                                <img class="image1"  src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMiAzMiIgYXJpYS1oaWRkZW49InRydWUiIHJvbGU9InByZXNlbnRhdGlvbiIgZm9jdXNhYmxlPSJmYWxzZSIgc3R5bGU9ImRpc3BsYXk6IGJsb2NrOyBmaWxsOiBub25lOyBoZWlnaHQ6IDE2cHg7IHdpZHRoOiAxNnB4OyBzdHJva2U6IGN1cnJlbnRjb2xvcjsgc3Ryb2tlLXdpZHRoOiAzOyBvdmVyZmxvdzogdmlzaWJsZTsiPjxnIGZpbGw9Im5vbmUiPjxwYXRoIGQ9Ik0yIDE2aDI4TTIgMjRoMjhNMiA4aDI4Ii8+PC9nPjwvc3ZnPg==" alt="">
+                                <img class="image2"  src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMiAzMiIgYXJpYS1oaWRkZW49InRydWUiIHJvbGU9InByZXNlbnRhdGlvbiIgZm9jdXNhYmxlPSJmYWxzZSIgc3R5bGU9ImRpc3BsYXk6IGJsb2NrOyBoZWlnaHQ6IDEwMCU7IHdpZHRoOiAxMDAlOyBmaWxsOiBjdXJyZW50Y29sb3I7Ij48cGF0aCBkPSJNMTYgLjdDNy41Ni43LjcgNy41Ni43IDE2UzcuNTYgMzEuMyAxNiAzMS4zIDMxLjMgMjQuNDQgMzEuMyAxNiAyNC40NC43IDE2IC43em0wIDI4Yy00LjAyIDAtNy42LTEuODgtOS45My00LjgxYTEyLjQzIDEyLjQzIDAgMCAxIDYuNDUtNC40QTYuNSA2LjUgMCAwIDEgOS41IDE0YTYuNSA2LjUgMCAwIDEgMTMgMCA2LjUxIDYuNTEgMCAwIDEtMy4wMiA1LjUgMTIuNDIgMTIuNDIgMCAwIDEgNi40NSA0LjRBMTIuNjcgMTIuNjcgMCAwIDEgMTYgMjguN3oiLz48L3N2Zz4=" alt="">
+                            </button>
+                         </div>
+
                     </div>
                 </div>
-            <div class="search">
-                <span><i class="fa-solid fa-magnifying-glass"></i></span>
-            </div>
-            </div>
-        </div> -->
+        </div>
+    </section>
 
-    <!-- </div> -->
-    
+
+<!-- Main -->
+<section class="main">
+    <div class="top">
+        <div class="icons">
+            <div class="none">
+               <img src="https://a0.muscache.com/im/pictures/mediaverse/category_icon/original/3e5243c8-4d15-4c6b-97e3-7ba2bb7bb880.png" alt="">
+                <p>Icons</p>
+            </div> 
+            <div class="none">
+                <img src="https://a0.muscache.com/pictures/3fb523a0-b622-4368-8142-b5e03df7549b.jpg" alt="">
+                <p>Amazing pools</p>
+            </div> 
+            <div class="none">  
+                 <img src="https://a0.muscache.com/pictures/3b1eb541-46d9-4bef-abc4-c37d77e3c21b.jpg" alt="">
+                 <p>Amazing Views</p>
+            </div>
+            <div class="none">
+               <img src="https://a0.muscache.com/pictures/bcd1adc0-5cee-4d7a-85ec-f6730b0f8d0c.jpg" alt="">
+               <p>Beachfront</p>
+            </div>
+            <div class="none">
+                <img src="https://a0.muscache.com/pictures/6b639c8d-cf9b-41fb-91a0-91af9d7677cc.jpg" alt="">
+                <p>Golfing</p>
+            </div>
+            <div class="none">
+                 <img src="https://a0.muscache.com/pictures/7630c83f-96a8-4232-9a10-0398661e2e6f.jpg" alt="">
+                 <p>Rooms</p>
+            </div>
+            <div class="none">
+                <img src="https://a0.muscache.com/pictures/aaa02c2d-9f0d-4c41-878a-68c12ec6c6bd.jpg" alt="">
+                <p>Farms</p>
+            </div>
+            <div class="none">
+                <img src="https://a0.muscache.com/pictures/c5a4f6fc-c92c-4ae8-87dd-57f1ff1b89a6.jpg" alt="">
+                <p>OMG!</p> 
+            </div>
+            <div class="none">  
+                <img src="https://a0.muscache.com/pictures/4d4a4eba-c7e4-43eb-9ce2-95e1d200d10e.jpg" alt="">  
+                <p>Treehouses</p>
+            </div>
+            <div class="none">
+                <img src="https://a0.muscache.com/pictures/6ad4bd95-f086-437d-97e3-14d12155ddfe.jpg" alt="">
+                <p>Countryside</p>
+            </div>
+            <div class="none">
+                 <img src="https://a0.muscache.com/pictures/732edad8-3ae0-49a8-a451-29a8010dcc0c.jpg" alt="">
+                 <p>Cabins</p>
+            </div>
+            <div class="none">
+                 <img src="https://a0.muscache.com/pictures/c8e2ed05-c666-47b6-99fc-4cb6edcde6b4.jpg" alt="">
+                 <p>Luxe</p>
+            </div>
+            <div class="none">
+                <img src="https://a0.muscache.com/pictures/ed8b9e47-609b-44c2-9768-33e6a22eccb2.jpg" alt="">
+                 <p>Top cities</p>
+            </div>
+            <div class="none">
+                <img src="https://a0.muscache.com/pictures/248f85bf-e35e-4dc3-a9a1-e1dbff9a3db4.jpg" alt="">
+                <p>Top of the world</p>
+            </div>
+            <div class="none">
+                 <img src="https://a0.muscache.com/pictures/677a041d-7264-4c45-bb72-52bff21eb6e8.jpg" alt="">
+                 <p>Lakefront</p>
+            </div>
+            <div class="none">
+                 <img src="https://a0.muscache.com/pictures/50861fca-582c-4bcc-89d3-857fb7ca6528.jpg" alt="">
+                  <p>Design</p>
+            </div>
+            <div class="none">
+                <img src="https://a0.muscache.com/pictures/a4634ca6-1407-4864-ab97-6e141967d782.jpg" alt="">
+                 <p>Lake</p>
+            </div>
+            <div class="none">
+                <img src="https://a0.muscache.com/pictures/5ed8f7c7-2e1f-43a8-9a39-4edfc81a3325.jpg" alt="">
+             <p>Bed & breakfast</p>
+            </div>
+            <div class="none">
+                <img src="https://a0.muscache.com/pictures/1b6a8b70-a3b6-48b5-88e1-2243d9172c06.jpg" alt="">
+                <p>Castles</p>
+            </div>
+            <div class="none">
+                <img src="https://a0.muscache.com/pictures/89faf9ae-bbbc-4bc4-aecd-cc15bf36cbca.jpg" alt="">
+                <p>Domes</p>
+            </div>
+            <div class="none">
+                <img src="https://a0.muscache.com/pictures/d7445031-62c4-46d0-91c3-4f29f9790f7a.jpg" alt="">
+                 <p>Earth homes</p>
+            </div>
+            <div class="none">
+               <img src="https://a0.muscache.com/pictures/9a2ca4df-ee90-4063-b15d-0de7e4ce210a.jpg" alt="">
+               <p>Off-the-grid</p>
+            </div>
+            <div class="none">
+                <img src="https://a0.muscache.com/pictures/3271df99-f071-4ecf-9128-eb2d2b1f50f0.jpg" alt="">
+                <p>Tiny homes</p>
+            </div>
+            <div class="none">
+                <img src="https://a0.muscache.com/pictures/ee9e2a40-ffac-4db9-9080-b351efc3cfc4.jpg" alt="">
+                 <p>Tropical</p>
+            </div>
+            <div class="none">
+               <img src="https://a0.muscache.com/pictures/c0a24c04-ce1f-490c-833f-987613930eca.jpg" alt="">
+                <p>National  parks</p>
+            </div>
+            <div class="none">
+                <img src="https://a0.muscache.com/pictures/78ba8486-6ba6-4a43-a56d-f556189193da.jpg" alt="">
+                <p>Mansions</p>
+            </div>
+            <div class="none">
+                <img src="https://a0.muscache.com/pictures/33dd714a-7b4a-4654-aaf0-f58ea887a688.jpg" alt="">
+                 <p>Historical homes</p>
+            </div>
+            <div class="none">
+              <img src="https://a0.muscache.com/pictures/ca25c7f3-0d1f-432b-9efa-b9f5dc6d8770.jpg" alt="">
+              <p>Camping</p>
+            </div>
+            <div class="none">
+              <img src="https://a0.muscache.com/pictures/687a8682-68b3-4f21-8d71-3c3aef6c1110.jpg" alt="">
+              <p>Boats</p>
+            </div>
+            <!-- <div class="none">
+               <img src="https://a0.muscache.com/pictures/3726d94b-534a-42b8-bca0-a0304d912260.jpg" alt="">
+               <p>Trending</p>
+            </div>
+            <div class="none">
+               <img src="https://a0.muscache.com/pictures/4221e293-4770-4ea8-a4fa-9972158d4004.jpg" alt="">
+               <p>Caves</p>
+            </div>
+            <div class="none">
+                <img src="https://a0.muscache.com/pictures/8b44f770-7156-4c7b-b4d3-d92549c8652f.jpg" alt="">
+                <p>Arctic</p>
+            </div>
+            <div class="none">
+                <img src="https://a0.muscache.com/pictures/5cdb8451-8f75-4c5f-a17d-33ee228e3db8.jpg" alt="">
+                <p>Windmills</p>
+            </div>
+            <div class="none">
+                <img src="https://a0.muscache.com/pictures/957f8022-dfd7-426c-99fd-77ed792f6d7a.jpg" alt="">
+                <p>Surfing</p>
+            </div>
+            <div class="none">
+                <img src="https://a0.muscache.com/pictures/1d477273-96d6-4819-9bda-9085f809dad3.jpg" alt="">
+                <p>A-frames</p>
+            </div>
+            <div class="none">
+               <img src="https://a0.muscache.com/pictures/8e507f16-4943-4be9-b707-59bd38d56309.jpg" alt="">
+               <p>Islands</p>
+            </div>
+            <div class="none">
+                <img src="https://a0.muscache.com/pictures/c027ff1a-b89c-4331-ae04-f8dee1cdc287.jpg" alt="">
+                <p>Houseboats</p>
+            </div>
+            <div class="none">
+                <img src="https://a0.muscache.com/pictures/e4b12c1b-409b-4cb6-a674-7c1284449f6e.jpg" alt="">
+                <p>Cycladic homes</p>
+            </div>
+            <div class="none">
+                <img src="https://a0.muscache.com/pictures/f0c5ca0f-5aa0-4fe5-b38d-654264bacddf.jpg" alt="">
+                 <p>Play</p>
+            </div>
+            <div class="none">
+                <img src="https://a0.muscache.com/pictures/0ff9740e-52a2-4cd5-ae5a-94e1bfb560d6.jpg" alt="">
+                <p>Containers</p>
+            </div>
+            <div class="none">
+               <img src="https://a0.muscache.com/pictures/ddd13204-a5ae-4532-898c-2e595b1bb15f.jpg" alt="">
+               <p>Chef's kitchen</p>
+            </div>
+            <div class="none">
+                <img src="https://a0.muscache.com/pictures/c0fa9598-4e37-40f3-b734-4bd0e2377add.jpg" alt="">
+                <p>New</p>
+            </div>
+            <div class="none">
+                <img src="https://a0.muscache.com/pictures/60ff02ae-d4a2-4d18-a120-0dd274a95925.jpg" alt="">
+                 <p>Vineyards</p>
+            </div>
+            <div class="none">
+                 <img src="https://a0.muscache.com/pictures/31c1d523-cc46-45b3-957a-da76c30c85f9.jpg" alt="">
+                 <p>Camper vans</p>
+            </div>
+            <div class="none">
+                <img src="https://a0.muscache.com/pictures/51f5cf64-5821-400c-8033-8a10c7787d69.jpg" alt="">
+                <p>Hanoks</p>
+            </div>
+            <div class="none">
+                <img src="https://a0.muscache.com/pictures/c8bba3ed-34c0-464a-8e6e-27574d20e4d2.jpg" alt="">
+                <p>Skiing</p>
+            </div>
+            <div class="none">
+                <img src="https://a0.muscache.com/pictures/747b326c-cb8f-41cf-a7f9-809ab646e10c.jpg" alt="">
+                <p>Shepherd's huts</p>
+            </div>
+            <div class="none">
+                <img src="https://a0.muscache.com/pictures/251c0635-cc91-4ef7-bb13-1084d5229446.jpg" alt="">
+                <p>Casas particulares</p>
+            </div>
+            <div class="none">
+                <img src="https://a0.muscache.com/pictures/48b55f09-f51c-4ff5-b2c6-7f6bd4d1e049.jpg" alt="">
+                <p>Minus</p>
+            </div>
+            <div class="none">
+               <img src="https://a0.muscache.com/pictures/827c5623-d182-474a-823c-db3894490896.jpg" alt="">
+               <p>Ryokans</p>
+            </div>
+            <div class="none">
+                <img src="https://a0.muscache.com/pictures/a6dd2bae-5fd0-4b28-b123-206783b5de1d.jpg" alt="">
+                <p>Deserts</p>
+            </div>
+            <div class="none">
+                <img src="https://a0.muscache.com/pictures/4759a0a7-96a8-4dcd-9490-ed785af6df14.jpg" alt="">
+                <p>Yurts</p>
+            </div>
+            <div class="none">
+                <img src="https://a0.muscache.com/pictures/d721318f-4752-417d-b4fa-77da3cbc3269.jpg" alt="">
+                <p>Towers</p>
+            </div>
+            <div class="none">
+               <img src="https://a0.muscache.com/pictures/f60700bc-8ab5-424c-912b-6ef17abc479a.jpg" alt="">
+               <p>Barns</p>
+            </div>
+            <div class="none">
+               <img src="https://a0.muscache.com/pictures/757deeaa-c78f-488f-992b-d3b1ecc06fc9.jpg" alt="">
+               <p>Ski-in/out</p>
+            </div>
+            <div class="none">
+                <img src="https://a0.muscache.com/pictures/e22b0816-f0f3-42a0-a5db-e0f1fa93292b.jpg" alt="">
+                <p>Adapted</p>
+            </div>
+            <div class="none">
+                <img src="https://a0.muscache.com/pictures/8a43b8c6-7eb4-421c-b3a9-1bd9fcb26622.jpg" alt="">
+                <p>Creative spaces</p>
+            </div>
+            <div class="none">
+                <img src="https://a0.muscache.com/pictures/8eccb972-4bd6-43c5-ac83-27822c0d3dcd.jpg" alt="">
+                <p>Grand pianos</p>
+            </div>
+            <div class="none">
+                <img src="https://a0.muscache.com/pictures/33848f9e-8dd6-4777-b905-ed38342bacb9.jpg" alt="">
+                <p>Trulli</p>
+            </div>
+            <div class="none">
+                <img src="https://a0.muscache.com/pictures/c9157d0a-98fe-4516-af81-44022118fbc7.jpg" alt="">
+                <p>Dammusi</p>
+            </div>
+            <div class="none">
+                <img src="https://a0.muscache.com/pictures/7ff6e4a1-51b4-4671-bc9a-6f523f196c61.jpg" alt="">
+                <p>Raids</p>
+            </div>
+            <div class="none">
+                <img src="https://a0.muscache.com/pictures/10ce1091-c854-40f3-a2fb-defc2995bcaf.jpg" alt="">
+                <p>Beach</p>
+            </div> -->
+        </div>
+
+    </div>
+
+</section>
+
+<!-- main.ipictures -->
+<section class="body">
+    <div class="pictures">
+        
+    </div>
+
+</section>
 </body>
-</html> -->
+</html>
