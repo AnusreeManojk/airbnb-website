@@ -1,8 +1,27 @@
 body html {
     margin: 0;
     background-color: #fff;
-    overflow-x: hidden
+    overflow-x: hidden;
+    scrollbar-width: none;
+    
 }
+html{
+    overflow-x: hidden !important;
+  box-sizing: border-box;
+  padding: 0;
+
+
+  
+}
+body{
+    overflow-x: hidden !important;
+    height: fit-content;
+    box-sizing: border-box;
+    padding: 0;  
+    background-color: #fff;
+
+}
+
 
 @font-face {
     font-family: "airbnb-bold";
@@ -502,7 +521,7 @@ header>div {
 footer {
     display: flex;
     flex-flow: column;
-    background-color: #F7F7F7;
+    background-color: #f7f7f7;
     overflow-x: hidden;
     box-sizing: border-box;
 
@@ -524,11 +543,20 @@ footer {
     width: 100%;
 }
 
+.top-footer-head{
+    margin-bottom: 7px;
+    margin-top: px;
+}
+
 .top-footer-head h2 {
-    font-family: "airbnb-regular" !important;
+    font-family: "airbnb-fixed";
     font-weight: 600;
     box-sizing: border-box;
     margin: 0;
+    font-size: 22px !important;
+    line-height: 26px;
+    letter-spacing: -0.22px;
+    font-weight: 500;
 }
 
 .top-ul {
@@ -560,7 +588,7 @@ footer {
 .top-ul ul li {
     min-width: max-content;
     display: flex;
-    margin: 6px 6px 6px 0;
+    margin: 6px 6px 9px 0;
     padding: 10px;
 }
 
@@ -569,9 +597,11 @@ footer {
     border-bottom: 2px solid #000000;
     padding: 0;
     padding-bottom: 0;
-    height: 30px;
+    height: 31.5px;
     margin-top: 15px;
     margin-right: 10px;
+    position: relative;
+    top:1px
 }
 
 .arrow {
@@ -622,8 +652,8 @@ footer {
     grid-template-columns: repeat(2, 1fr);
     list-style: none;
     padding-left: 0;
-    row-gap: 25px;
-    column-gap: 30px;
+    row-gap: 23px;
+    column-gap: 8px;
 }
 
 .items-cont ul li {
@@ -651,6 +681,8 @@ footer {
     display: grid;
     width: 100%;
     grid-template-columns: repeat(1, 1fr);
+    max-width: 1141px;
+    column-gap: 8px;
 }
 
 .down-footer>div {
@@ -659,10 +691,22 @@ footer {
     padding-top: 24px;
     padding-bottom: 24px;
     border-bottom: 1px solid #dddd;
+    width: 100%;
+    /* max-width: 378.5px; */
 }
 
 .down-footer>div:first-child {
     padding-top: 0;
+    width: 100%;
+
+}
+.support:nth-child(2){
+    width: 100%;
+
+}
+.support:nth-child(3){
+    width: 100%;
+
 }
 
 .down-footer ul {
@@ -921,10 +965,6 @@ footer {
         grid-template-columns: repeat(2, 1fr);
         column-gap: 24px;
     }
-
-
-
-
 }
 
 
@@ -1123,7 +1163,7 @@ footer {
         box-sizing: border-box;
     }
 
-   
+
     .center-button-padding {
         align-items: center;
         display: grid;
@@ -1342,9 +1382,10 @@ footer {
         align-self: center;
         width: 48px;
         justify-content: center;
-        margin-left: -10px;  
+        margin-left: -10px;
     }
-    .button-arrow img{
+
+    .button-arrow img {
         width: 16px;
         height: 16px;
     }
@@ -1450,8 +1491,8 @@ footer {
         display: flex;
         justify-content: center;
         align-items: center;
-        
-            padding: 0px 24px 26px 24px !important;
+
+        padding: 0px 24px 26px 24px !important;
     }
 
     .links {
@@ -1812,11 +1853,81 @@ footer {
         padding-top: 12px;
     }
 
+    .button-menu-padding {
+        top: 16px;
+    }
+
+    .button-menu {
+        gap: 21px;
+        left: 2.5px;
+    }
+
+    .first-span {
+        top: 0;
+    }
+
+    .center-button {
+        margin-left: 5px;
+    }
+
+    .check::before {
+        left: 0
+    }
+
+    #centerCnt-3::before {
+        left: 27px;
+        top: -16px
+    }
+
+    #check2 {
+        left: 36.5px;
+        top: -14px;
+
+    }
+
+    .button-content.four::before {
+        left: 0.5px;
+        top: 3px;
+    }
+
+    #who {
+        /* margin-left: -10px; */
+        /* position: relative; */
+        margin-left: -114px;
+        margin-top: 4px;
+    }
+
+    .center4 {
+        top: -1px;
+    }
+
+    .center-button {
+        max-width: 850px;
+        left: 3.5px;
+    }
+
+    .scrollable-icon {
+        /* position: relative; */
+    }
+
+    .arrow {
+        right: 0;
+        /* top:10px */
+        margin-top: 10px;
+    }
 }
 
 @media screen and (min-width:1640px) {
     .card-section {
         grid-template-columns: repeat(5, 1fr);
+    }
+
+    .arrow {
+        width: 150px;
+    }
+
+    .arrow .img {
+        margin-left: -30px;
     }
 }
 
@@ -1829,7 +1940,7 @@ footer {
         display: flex;
         flex-flow: column;
         row-gap: 32px;
-        padding: 48px 389px;
+        padding: 48px 389px  48px ;
     }
 
     .top-footer {
@@ -1840,14 +1951,24 @@ footer {
         display: flex;
         flex-flow: column;
         row-gap: 32px;
-        padding: 48px 389px 24px 389px;
+        padding: 48px 389px 23px 389px;
     }
 
+    .down-footer{
+        /* padding-bottom: 48px; */
+        padding-top: 0;
+    }
+    .down-footer>div:first-child{
+        padding-bottom: 48px;
+    }
+    .down-footer>div{
+        padding:0 ;
+    }
     .bottom-links {
         display: flex;
         flex-flow: column;
         row-gap: 32px;
-        padding: 0px 389px 24px 389px;
+        padding: 0px 389px 21.5px 389px !important;
     }
 
     .top-ul {
@@ -1856,44 +1977,78 @@ footer {
 
     .top-ul ul li:first-child {
         color: #000000;
-        border-bottom: 4px solid #000000;
+        border-bottom: 2px solid #000000;
     }
 
     .arrow {
-        width: 60px;
-        margin-left: 30px;
-        right: 0;
-        </div>
-        <span class="center4"> Add guests</span>
+        /* margin-left: 30px; */
+        right: 0px;
+        width: 180px;
 
-    .scrollable-icon-paading {
-        border-top: none;
-        margin: 0;
-    }
 
-    .scrollable-icon {
-        margin-top: 89px;
     }
-    </div>
-    <span class="center4"> Add guests</span>
-.button-menu {
-        margin-top: -2px;
-        padding-bottom: 21px;
-        margin-left: -5px;
-        gap: 21px
-    }
+        .scrollable-icon-paading {
+            border-top: none;
+            margin: 0;
+        }
 
-    .button-menu>div:first-child {
-        margin-left: 13.1px;
-    }
+        .scrollable-icon {
+            margin-top: 89px;
+        }
 
-    .center-button {
-        max-height: 64px;
-    }
+        .button-menu {
+            padding-bottom: 23px;
+            margin-left: -6.5px;
+            gap: 21px;
+            /* top:-3px */
+        }
 
-    .arrow {
-        width: 100px;
-        right: 50px;
-    }
+        .button-menu>div:first-child {
+            margin-left: 13.1px;
+        }
+
+        .center-button {
+            max-height: 66px;
+        }
+
+       
+       
+        .top-ul ul{
+            margin-top: 1px;
+        }
+        .bottom-para{
+            margin-top: -1px;
+        }
+        .footer-left {
+            gap: 8.5px;
+          }
+
+          .items-cont ul{
+            margin: 0;
+            padding-top: 30.3px;
+          }
+          #who{
+          margin-top: 3px;
+          }
+          .button-content.four::before {
+    /* left: 0.5px; */
+    top: 2px;
+  }
+  .news {
+    margin-top: 1px;
+  }
+  .top-ul ul li:nth-child(2) {
+   
+    /* margin: 6px 6px 7px 0; */
+    padding: 10px 10px 10px 16px;
 }
+.footer-right{
+    position: relative;
+    left: 10px;
+}
+.social{
+    gap:16px !important;
+}
+
+    }
 
